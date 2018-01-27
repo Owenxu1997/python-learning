@@ -20,7 +20,7 @@ text = ar.read()
 print(text)
 ar.close()
 """
-
+"""
 #downloading files from the web
 from urllib import request
 
@@ -36,3 +36,8 @@ def download_data(csv_url):
     for line in lines:
         fx.write(line + '\n')
     fx.close()
+"""
+
+import requests
+from bs4 import BeautifulSoup
+
